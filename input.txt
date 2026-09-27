@@ -1,0 +1,12 @@
+Song IDs:
+105 210 315 420 525 630 735 840
+
+Table size:
+10
+
+Search IDs:
+105 210 315 420 525 630 735 840
+
+Note: The supplied question image does not show a separate search-ID list.
+Therefore, the stored IDs are used as the search IDs. Replace them if your
+lecturer provided another list.

@@ -1,0 +1,59 @@
+SONG ID HASHING ASSIGNMENT
+=========================
+Division method: h(k) = k mod 10
+Collision resolution: Linear probing
+
+A) INSERTION TRACE
+------------------
+Insert 105 | h(k) = 5 | collisions = 0 | final index = 5
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :    -    -    -    -    -  105    -    -    -    -
+
+Insert 210 | h(k) = 0 | collisions = 0 | final index = 0
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :  210    -    -    -    -  105    -    -    -    -
+
+Insert 315 | h(k) = 5 | collisions = 1 | final index = 6
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :  210    -    -    -    -  105  315    -    -    -
+
+Insert 420 | h(k) = 0 | collisions = 1 | final index = 1
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :  210  420    -    -    -  105  315    -    -    -
+
+Insert 525 | h(k) = 5 | collisions = 2 | final index = 7
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :  210  420    -    -    -  105  315  525    -    -
+
+Insert 630 | h(k) = 0 | collisions = 2 | final index = 2
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :  210  420  630    -    -  105  315  525    -    -
+
+Insert 735 | h(k) = 5 | collisions = 3 | final index = 8
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :  210  420  630    -    -  105  315  525  735    -
+
+Insert 840 | h(k) = 0 | collisions = 3 | final index = 3
+Index :    0    1    2    3    4    5    6    7    8    9
+Value :  210  420  630  840    -  105  315  525  735    -
+
+B) SEARCH COMPARISON
+--------------------
+ID       Hash comparisons Linear comparisons
+105      1                1                 
+210      1                2                 
+315      2                3                 
+420      2                4                 
+525      3                5                 
+630      3                6                 
+735      4                7                 
+840      4                8                 
+
+C) ANALYSIS
+-----------
+Records (n)              = 8
+Table size (m)           = 10
+Load factor (alpha)      = 0.80
+Total insertion collisions = 12
+Average hash comparisons = 2.50
+Average linear comparisons = 4.50
