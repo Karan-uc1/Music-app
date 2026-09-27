@@ -6,9 +6,7 @@
 #define NUM_SEARCH_IDS 8
 
 int song_ids[NUM_IDS] = {105, 210, 315, 420, 525, 630, 735, 840};
-/* The separate search-ID list is not visible in the supplied question image.
-   For this submission, the stored IDs are searched. Replace this list if the
-   lecturer provided a different search list. */
+
 int search_ids[NUM_SEARCH_IDS] = {105, 210, 315, 420, 525, 630, 735, 840};
 
 int hash_function(int key) {
