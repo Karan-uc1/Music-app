@@ -8,4 +8,4 @@ For the successful searches used in this experiment, hashing required an average
 
 Therefore, hashing is appropriate for a music application when frequent ID-based lookup is required. In practice, the collision rate can be reduced by selecting a suitable table size and hash function and by keeping the load factor at a reasonable level.
 
-> **Submission note:** The supplied question image does not show the table size or a separate list of search IDs. This repository uses table size 10 and searches the eight stored IDs. These assumptions should be replaced if the original assignment sheet provides different values.
+
